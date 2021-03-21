@@ -2,13 +2,13 @@
 <html class="has-navbar-fixed-top">
 <head>
     <meta charset="utf-8">
-<title>GeekLeeG</title>
+<title>刀十一</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
 
 
-<link href="/zh-cn/index.html" rel="alternate" hreflang="zh-CN" />
+<link href="/en/index.html" rel="alternate" hreflang="en" />
     
 
 
@@ -17,11 +17,11 @@
 
 
     <meta property="og:type" content="website">
-<meta property="og:title" content="GeekLeeG">
+<meta property="og:title" content="刀十一">
 <meta property="og:url" content="https://yuliji.github.io/index.html">
-<meta property="og:site_name" content="GeekLeeG">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Liji Yu">
+<meta property="og:site_name" content="刀十一">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="刀十一">
 <meta name="twitter:card" content="summary">
 
 
@@ -71,7 +71,7 @@
             <a class="navbar-item navbar-logo" href="/">
                 
                     
-                    GeekLeeg
+                    刀十一
                     
                 
             </a>
@@ -85,7 +85,7 @@
         <div class="navbar-menu navbar-start">
             
             <a class="navbar-item "
-               href="/archives">Archives</a>
+               href="/archives">归档</a>
             
         </div>
         
@@ -97,7 +97,7 @@
                 <span class="icon">
                     <i class="fas fa-globe"></i>
                 </span>
-                <span>English</span>
+                <span>简体中文</span>
                 <span class="icon is-small">
             <i class="fas fa-angle-down" aria-hidden="true"></i>
           </span>
@@ -107,11 +107,11 @@
             <div class="dropdown-content">
             
                 <a href="/index.html" class="dropdown-item">
-                    English
+                    简体中文
                 </a>
             
-                <a href="/zh-cn/index.html" class="dropdown-item">
-                    简体中文
+                <a href="/en/index.html" class="dropdown-item">
+                    English
                 </a>
             
             </div>
@@ -122,7 +122,7 @@
 
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Search" href="javascript:;">
+            <a class="navbar-item search" title="搜索" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -145,19 +145,207 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2019/05/03/Why-Dropshipping-Does-Not-Work-For-Me/" itemprop="url">Why Drop Shipping Does Not Work For Me</a>
+            <a href="/2021/03/21/zh-cn/%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BF%90%E7%BB%B4%E7%9B%B8%E5%85%B3Python%E5%BA%932%EF%BC%9AIPy/" itemprop="url">好用的运维相关Python库2：IPy</a>
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2019-05-03T07:36:41.000Z" itemprop="datePublished">May 3 2019</time>
+            <time datetime="2021-03-21T00:59:38.000Z" itemprop="datePublished">3月 21 2021</time>
         </span>
         
         
         <span class="column is-narrow">
             
             
-            4 minutes read (About 639 words)
+            1 分钟 读完 (约 200 字)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>&#x4ECA;&#x5929;&#x4ECB;&#x7ECD;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7528;&#x7684;&#x8FD0;&#x7EF4;&#x76F8;&#x5173;Python&#x5E93;<code>IPy</code>&#x3002;&#x8FD9;&#x4E2A;&#x5E93;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x5F3A;&#x5927;&#x7684;&#x5904;&#x7406;IP&#x5730;&#x5740;&#x76F8;&#x5173;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x5176;&#x4E2D;&#x6700;&#x91CD;&#x8981;&#x7684;<code>IP</code> &#x7C7B;&#x53EF;&#x4EE5;&#x89E3;&#x6790;&#x548C;&#x5904;&#x7406;&#x5404;&#x79CD;IPv4&#x548C;IPv6&#x5730;&#x5740;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x89E3;&#x6790;CIDR&#x7F51;&#x5740;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> IPy <span class="hljs-keyword">import</span> IP</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>ip = IP(<span class="hljs-string">&apos;127.0.0.0/30&apos;</span>)</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> ip:</span><br><span class="line"><span class="hljs-meta">... </span> print(x)</span><br><span class="line">...</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span></span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span></span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.2</span></span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.3</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>&#x652F;&#x6301;IPv4&#x548C;IPv6&#x5730;&#x5740;&#x683C;&#x5F0F;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/8&apos;</span>).version()</span><br><span class="line"><span class="hljs-number">4</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;::1&apos;</span>).version()</span><br><span class="line"><span class="hljs-number">6</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-number">0x7f000001</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;0x7f000001&apos;</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;127.0.0.1&apos;</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;10&apos;</span>))</span><br><span class="line"><span class="hljs-number">10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;1080:0:0:0:8:800:200C:417A&apos;</span>))</span><br><span class="line"><span class="hljs-number">1080</span>::<span class="hljs-number">8</span>:<span class="hljs-number">800</span>:<span class="hljs-number">200</span>c:<span class="hljs-number">417</span>a</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;1080::8:800:200C:417A&apos;</span>))</span><br><span class="line"><span class="hljs-number">1080</span>::<span class="hljs-number">8</span>:<span class="hljs-number">800</span>:<span class="hljs-number">200</span>c:<span class="hljs-number">417</span>a</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;::1&apos;</span>))</span><br><span class="line">::<span class="hljs-number">1</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;::13.1.68.3&apos;</span>))</span><br><span class="line">::d01:<span class="hljs-number">4403</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>&#x652F;&#x6301;&#x5404;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#x5B50;&#x7F51;&#x63A9;&#x7801;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;127.0.0.0/8&apos;</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">8</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;127.0.0.0/255.0.0.0&apos;</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">8</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;127.0.0.0-127.255.255.255&apos;</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">8</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>&#x628A;IP&#x5730;&#x5740;&#x8F6C;&#x6362;&#x6210;&#x5404;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/32&apos;</span>).strNormal()</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/24&apos;</span>).strNormal()</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0/24&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/24&apos;</span>).strNormal(<span class="hljs-number">0</span>)</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/24&apos;</span>).strNormal(<span class="hljs-number">1</span>)</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0/24&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/24&apos;</span>).strNormal(<span class="hljs-number">2</span>)</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0/255.255.255.0&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/24&apos;</span>).strNormal(<span class="hljs-number">3</span>)</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0-10.0.0.255&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>ip = IP(<span class="hljs-string">&apos;10.0.0.0&apos;</span>)</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(ip)</span><br><span class="line"><span class="hljs-number">10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>ip.NoPrefixForSingleIp = <span class="hljs-literal">None</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(ip)</span><br><span class="line"><span class="hljs-number">10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">32</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>ip.WantPrefixLen = <span class="hljs-number">3</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(ip)</span><br><span class="line"><span class="hljs-number">10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span><span class="hljs-number">-10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>&#x66F4;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x67E5;&#x9605;<a href="https://github.com/autocracy/python-ipy/" target="_blank" rel="noopener">https://github.com/autocracy/python-ipy/</a></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2021/03/21/zh-cn/%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BF%90%E7%BB%B4%E7%9B%B8%E5%85%B3Python%E5%BA%931%EF%BC%9Apsutil/" itemprop="url">好用的运维相关Python库1：psutil</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2021-03-21T00:54:38.000Z" itemprop="datePublished">3月 21 2021</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            4 分钟 读完 (约 572 字)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>&#x7531;&#x4E8E;Bash&#x5B9E;&#x5728;&#x592A;&#x6076;&#x5FC3;&#xFF0C;&#x5F88;&#x591A;&#x8FD0;&#x7EF4;&#x5DE5;&#x7A0B;&#x5E08;&#x5F00;&#x59CB;&#x4F7F;&#x7528;Python&#x4EE3;&#x66FF;Bash&#x5199;&#x5404;&#x79CD;&#x811A;&#x672C;&#x3002;</p>
+<p>&#x867D;&#x7136;&#x7406;&#x8BBA;&#x4E0A;&#x53EF;&#x4EE5;&#x7528;Python&#x8C03;&#x7528;Bash&#x6307;&#x4EE4;&#x5B9E;&#x73B0;&#x5404;&#x79CD;&#x529F;&#x80FD;&#xFF0C;&#x4F46;&#x662F;&#x7ED9;&#x5404;&#x79CD;&#x547D;&#x4EE4;&#x5199;Bash wrapper&#x8FD8;&#x8981;&#x89E3;&#x6790;&#x8F93;&#x51FA;&#x5B9E;&#x5728;&#x592A;&#x9EBB;&#x70E6;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x5E0C;&#x671B;&#x7528;&#x539F;&#x751F;Python&#x5E93;&#x6765;&#x5B9E;&#x73B0;&#x5404;&#x79CD;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x4ECA;&#x5929;&#x6211;&#x63A8;&#x8350;&#x4E00;&#x4E2A;&#x597D;&#x7528;&#x7684;Python&#x5E93;<code>psutil</code>&#x3002;</p>
+<p><code>psutil</code>&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x8DE8;&#x5E73;&#x53F0;&#x4F7F;&#x7528;&#x7684;&#x5E93;&#x3002;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x83B7;&#x53D6;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#xFF08;CPU&#x3001;&#x5185;&#x5B58;&#x3001;&#x78C1;&#x76D8;&#x3001;&#x7F51;&#x7EDC;&#xFF09;&#x548C;&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x66FF;&#x4EE3;&#x8FD9;&#x4E9B;UNIX&#x7684;&#x7CFB;&#x7EDF;&#x547D;&#x4EE4;&#xFF1A;<code>ps, top, lsof, netstat, ifconfig, who, df, kill, free, nice, ionice, iostat, iotop, uptime, pidof, tty, taskset, pmap</code></p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E9B;&#x5177;&#x4F53;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> psutil <span class="hljs-comment"># &#x52A0;&#x8F7D;&#x5E93;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="CPU&#x4FE1;&#x606F;"><a href="#CPU&#x4FE1;&#x606F;" class="headerlink" title="CPU&#x4FE1;&#x606F;"></a>CPU&#x4FE1;&#x606F;</h1><p>CPU&#x5360;&#x7528;&#x7387;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.cpu_percent(interval=<span class="hljs-number">5</span>)</span><br><span class="line"><span class="hljs-number">12.9</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>CPU&#x9891;&#x7387;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.cpu_freq()</span><br><span class="line">scpufreq(current=<span class="hljs-number">2300</span>, min=<span class="hljs-number">2300</span>, max=<span class="hljs-number">2300</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>CPU load</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.getloadavg()</span><br><span class="line">(<span class="hljs-number">2.21044921875</span>, <span class="hljs-number">2.4814453125</span>, <span class="hljs-number">2.74609375</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="&#x5185;&#x5B58;&#x4FE1;&#x606F;"><a href="#&#x5185;&#x5B58;&#x4FE1;&#x606F;" class="headerlink" title="&#x5185;&#x5B58;&#x4FE1;&#x606F;"></a>&#x5185;&#x5B58;&#x4FE1;&#x606F;</h1><p>&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x72B6;&#x51B5;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.virtual_memory()</span><br><span class="line">svmem(total=<span class="hljs-number">8589934592</span>, available=<span class="hljs-number">1664913408</span>, percent=<span class="hljs-number">80.6</span>, used=<span class="hljs-number">5807058944</span>, free=<span class="hljs-number">15069184</span>, active=<span class="hljs-number">1651421184</span>, inactive=<span class="hljs-number">1649065984</span>, wired=<span class="hljs-number">4155637760</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="&#x78C1;&#x76D8;"><a href="#&#x78C1;&#x76D8;" class="headerlink" title="&#x78C1;&#x76D8;"></a>&#x78C1;&#x76D8;</h1><p>&#x78C1;&#x76D8;&#x5206;&#x533A;&#x4FE1;&#x606F;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.disk_partitions()</span><br><span class="line">[sdiskpart(device=<span class="hljs-string">&apos;/dev/disk1s5&apos;</span>, mountpoint=<span class="hljs-string">&apos;/&apos;</span>, fstype=<span class="hljs-string">&apos;apfs&apos;</span>, opts=<span class="hljs-string">&apos;ro,local,rootfs,dovolfs,journaled,multilabel&apos;</span>, maxfile=<span class="hljs-number">255</span>, maxpath=<span class="hljs-number">1024</span>), ...]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>&#x78C1;&#x76D8;&#x5360;&#x7528;&#x7387;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.disk_usage(<span class="hljs-string">&apos;/&apos;</span>)</span><br><span class="line">sdiskusage(total=<span class="hljs-number">250685575168</span>, used=<span class="hljs-number">11233398784</span>, free=<span class="hljs-number">14531440640</span>, percent=<span class="hljs-number">43.6</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>&#x78C1;&#x76D8;IO</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.disk_io_counters()</span><br><span class="line">sdiskio(read_count=<span class="hljs-number">190236826</span>, write_count=<span class="hljs-number">110716593</span>, read_bytes=<span class="hljs-number">11349786423296</span>, write_bytes=<span class="hljs-number">9505852936192</span>, read_time=<span class="hljs-number">165443373</span>, write_time=<span class="hljs-number">100234117</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="&#x7F51;&#x7EDC;"><a href="#&#x7F51;&#x7EDC;" class="headerlink" title="&#x7F51;&#x7EDC;"></a>&#x7F51;&#x7EDC;</h1><p>&#x7F51;&#x7EDC;&#x8FDE;&#x63A5; (<code>netstat</code>)</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> psutil</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.net_connections()</span><br><span class="line">[pconn(fd=<span class="hljs-number">115</span>, family=&lt;AddressFamily.AF_INET: <span class="hljs-number">2</span>&gt;, type=&lt;SocketType.SOCK_STREAM: <span class="hljs-number">1</span>&gt;, laddr=addr(ip=<span class="hljs-string">&apos;10.0.0.1&apos;</span>, port=<span class="hljs-number">48776</span>), raddr=addr(ip=<span class="hljs-string">&apos;93.186.135.91&apos;</span>, port=<span class="hljs-number">80</span>), status=<span class="hljs-string">&apos;ESTABLISHED&apos;</span>, pid=<span class="hljs-number">1254</span>),</span><br><span class="line"> pconn(fd=<span class="hljs-number">117</span>, family=&lt;AddressFamily.AF_INET: <span class="hljs-number">2</span>&gt;, type=&lt;SocketType.SOCK_STREAM: <span class="hljs-number">1</span>&gt;, laddr=addr(ip=<span class="hljs-string">&apos;10.0.0.1&apos;</span>, port=<span class="hljs-number">43761</span>), raddr=addr(ip=<span class="hljs-string">&apos;72.14.234.100&apos;</span>, port=<span class="hljs-number">80</span>), status=<span class="hljs-string">&apos;CLOSING&apos;</span>, pid=<span class="hljs-number">2987</span>),</span><br><span class="line"> pconn(fd=<span class="hljs-number">-1</span>, family=&lt;AddressFamily.AF_INET: <span class="hljs-number">2</span>&gt;, type=&lt;SocketType.SOCK_STREAM: <span class="hljs-number">1</span>&gt;, laddr=addr(ip=<span class="hljs-string">&apos;10.0.0.1&apos;</span>, port=<span class="hljs-number">60759</span>), raddr=addr(ip=<span class="hljs-string">&apos;72.14.234.104&apos;</span>, port=<span class="hljs-number">80</span>), status=<span class="hljs-string">&apos;ESTABLISHED&apos;</span>, pid=<span class="hljs-literal">None</span>),</span><br><span class="line"> pconn(fd=<span class="hljs-number">-1</span>, family=&lt;AddressFamily.AF_INET: <span class="hljs-number">2</span>&gt;, type=&lt;SocketType.SOCK_STREAM: <span class="hljs-number">1</span>&gt;, laddr=addr(ip=<span class="hljs-string">&apos;10.0.0.1&apos;</span>, port=<span class="hljs-number">51314</span>), raddr=addr(ip=<span class="hljs-string">&apos;72.14.234.83&apos;</span>, port=<span class="hljs-number">443</span>), status=<span class="hljs-string">&apos;SYN_SENT&apos;</span>, pid=<span class="hljs-literal">None</span>)</span><br><span class="line"> ...]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#xFF08;<code>ifconfig</code>)</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.net_if_addrs()</span><br><span class="line">{<span class="hljs-string">&apos;lo&apos;</span>: [snicaddr(family=&lt;AddressFamily.AF_INET: <span class="hljs-number">2</span>&gt;, address=<span class="hljs-string">&apos;127.0.0.1&apos;</span>, netmask=<span class="hljs-string">&apos;255.0.0.0&apos;</span>, broadcast=<span class="hljs-string">&apos;127.0.0.1&apos;</span>, ptp=<span class="hljs-literal">None</span>),</span><br><span class="line">        snicaddr(family=&lt;AddressFamily.AF_INET6: <span class="hljs-number">10</span>&gt;, address=<span class="hljs-string">&apos;::1&apos;</span>, netmask=<span class="hljs-string">&apos;ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff&apos;</span>, broadcast=<span class="hljs-literal">None</span>, ptp=<span class="hljs-literal">None</span>),</span><br><span class="line">        snicaddr(family=&lt;AddressFamily.AF_LINK: <span class="hljs-number">17</span>&gt;, address=<span class="hljs-string">&apos;00:00:00:00:00:00&apos;</span>, netmask=<span class="hljs-literal">None</span>, broadcast=<span class="hljs-string">&apos;00:00:00:00:00:00&apos;</span>, ptp=<span class="hljs-literal">None</span>)],</span><br><span class="line"> <span class="hljs-string">&apos;wlan0&apos;</span>: [snicaddr(family=&lt;AddressFamily.AF_INET: <span class="hljs-number">2</span>&gt;, address=<span class="hljs-string">&apos;192.168.1.3&apos;</span>, netmask=<span class="hljs-string">&apos;255.255.255.0&apos;</span>, broadcast=<span class="hljs-string">&apos;192.168.1.255&apos;</span>, ptp=<span class="hljs-literal">None</span>),</span><br><span class="line">           snicaddr(family=&lt;AddressFamily.AF_INET6: <span class="hljs-number">10</span>&gt;, address=<span class="hljs-string">&apos;fe80::c685:8ff:fe45:641%wlan0&apos;</span>, netmask=<span class="hljs-string">&apos;ffff:ffff:ffff:ffff::&apos;</span>, broadcast=<span class="hljs-literal">None</span>, ptp=<span class="hljs-literal">None</span>),</span><br><span class="line">           snicaddr(family=&lt;AddressFamily.AF_LINK: <span class="hljs-number">17</span>&gt;, address=<span class="hljs-string">&apos;c4:85:08:45:06:41&apos;</span>, netmask=<span class="hljs-literal">None</span>, broadcast=<span class="hljs-string">&apos;ff:ff:ff:ff:ff:ff&apos;</span>, ptp=<span class="hljs-literal">None</span>)]}</span><br></pre></td></tr></tbody></table></figure>
+
+
+<h1 id="&#x5176;&#x5B83;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;"><a href="#&#x5176;&#x5B83;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;" class="headerlink" title="&#x5176;&#x5B83;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;"></a>&#x5176;&#x5B83;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;</h1><p>&#x7535;&#x6C60;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.sensors_battery()</span><br><span class="line">sbattery(percent=<span class="hljs-number">93</span>, secsleft=<span class="hljs-number">15420</span>, power_plugged=<span class="hljs-literal">False</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<p>&#x5F53;&#x524D;&#x7528;&#x6237;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.users()</span><br><span class="line">[suser(name=<span class="hljs-string">&apos;myname&apos;</span>, terminal=<span class="hljs-string">&apos;console&apos;</span>, host=<span class="hljs-literal">None</span>, started=<span class="hljs-number">1604809088.0</span>, pid=<span class="hljs-number">180</span>), suser(name=<span class="hljs-string">&apos;yuliji&apos;</span>, terminal=<span class="hljs-string">&apos;ttys012&apos;</span>, host=<span class="hljs-literal">None</span>, started=<span class="hljs-number">1615375616.0</span>, pid=<span class="hljs-number">13894</span>)]</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;"><a href="#&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;" class="headerlink" title="&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;"></a>&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;</h1><p>PID</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>psutil.pids()</span><br><span class="line">[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>, <span class="hljs-number">10</span>, <span class="hljs-number">11</span>, <span class="hljs-number">12</span>, <span class="hljs-number">13</span>, <span class="hljs-number">14</span>, <span class="hljs-number">15</span>, <span class="hljs-number">17</span>, <span class="hljs-number">18</span>, <span class="hljs-number">19</span>, ..., <span class="hljs-number">32498</span>]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>&#x6240;&#x6709;&#x8FDB;&#x7A0B;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> proc <span class="hljs-keyword">in</span> psutil.process_iter([<span class="hljs-string">&apos;pid&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-string">&apos;username&apos;</span>]):</span><br><span class="line"><span class="hljs-meta">... </span>    print(proc.info)</span><br><span class="line">...</span><br><span class="line">{<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;systemd&apos;</span>, <span class="hljs-string">&apos;pid&apos;</span>: <span class="hljs-number">1</span>, <span class="hljs-string">&apos;username&apos;</span>: <span class="hljs-string">&apos;root&apos;</span>}</span><br><span class="line">{<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;kthreadd&apos;</span>, <span class="hljs-string">&apos;pid&apos;</span>: <span class="hljs-number">2</span>, <span class="hljs-string">&apos;username&apos;</span>: <span class="hljs-string">&apos;root&apos;</span>}</span><br><span class="line">{<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;ksoftirqd/0&apos;</span>, <span class="hljs-string">&apos;pid&apos;</span>: <span class="hljs-number">3</span>, <span class="hljs-string">&apos;username&apos;</span>: <span class="hljs-string">&apos;root&apos;</span>}</span><br></pre></td></tr></tbody></table></figure>
+
+
+<p>&#x8BE6;&#x7EC6;&#x6587;&#x6863;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#xFF1A; <a href="https://psutil.readthedocs.io/en/latest/" target="_blank" rel="noopener">https://psutil.readthedocs.io/en/latest/</a></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2021/03/21/zh-cn/%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BF%90%E7%BB%B4%E7%9B%B8%E5%85%B3Python%E5%BA%932%EF%BC%9Aipy/" itemprop="url">好用的运维相关Python库2：IPy</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2021-03-21T00:54:38.000Z" itemprop="datePublished">3月 21 2021</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            1 分钟 读完 (约 200 字)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <html><head></head><body><p>&#x4ECA;&#x5929;&#x4ECB;&#x7ECD;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7528;&#x7684;&#x8FD0;&#x7EF4;&#x76F8;&#x5173;Python&#x5E93;<code>IPy</code>&#x3002;&#x8FD9;&#x4E2A;&#x5E93;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x5F3A;&#x5927;&#x7684;&#x5904;&#x7406;IP&#x5730;&#x5740;&#x76F8;&#x5173;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x5176;&#x4E2D;&#x6700;&#x91CD;&#x8981;&#x7684;<code>IP</code> &#x7C7B;&#x53EF;&#x4EE5;&#x89E3;&#x6790;&#x548C;&#x5904;&#x7406;&#x5404;&#x79CD;IPv4&#x548C;IPv6&#x5730;&#x5740;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x89E3;&#x6790;CIDR&#x7F51;&#x5740;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> IPy <span class="hljs-keyword">import</span> IP</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>ip = IP(<span class="hljs-string">&apos;127.0.0.0/30&apos;</span>)</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> ip:</span><br><span class="line"><span class="hljs-meta">... </span> print(x)</span><br><span class="line">...</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span></span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span></span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.2</span></span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.3</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>&#x652F;&#x6301;IPv4&#x548C;IPv6&#x5730;&#x5740;&#x683C;&#x5F0F;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/8&apos;</span>).version()</span><br><span class="line"><span class="hljs-number">4</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;::1&apos;</span>).version()</span><br><span class="line"><span class="hljs-number">6</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-number">0x7f000001</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;0x7f000001&apos;</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;127.0.0.1&apos;</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.1</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;10&apos;</span>))</span><br><span class="line"><span class="hljs-number">10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;1080:0:0:0:8:800:200C:417A&apos;</span>))</span><br><span class="line"><span class="hljs-number">1080</span>::<span class="hljs-number">8</span>:<span class="hljs-number">800</span>:<span class="hljs-number">200</span>c:<span class="hljs-number">417</span>a</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;1080::8:800:200C:417A&apos;</span>))</span><br><span class="line"><span class="hljs-number">1080</span>::<span class="hljs-number">8</span>:<span class="hljs-number">800</span>:<span class="hljs-number">200</span>c:<span class="hljs-number">417</span>a</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;::1&apos;</span>))</span><br><span class="line">::<span class="hljs-number">1</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;::13.1.68.3&apos;</span>))</span><br><span class="line">::d01:<span class="hljs-number">4403</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>&#x652F;&#x6301;&#x5404;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#x5B50;&#x7F51;&#x63A9;&#x7801;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;127.0.0.0/8&apos;</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">8</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;127.0.0.0/255.0.0.0&apos;</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">8</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(IP(<span class="hljs-string">&apos;127.0.0.0-127.255.255.255&apos;</span>))</span><br><span class="line"><span class="hljs-number">127.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">8</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>&#x628A;IP&#x5730;&#x5740;&#x8F6C;&#x6362;&#x6210;&#x5404;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x7B26;&#x4E32;</p>
+<figure class="highlight python hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/32&apos;</span>).strNormal()</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/24&apos;</span>).strNormal()</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0/24&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/24&apos;</span>).strNormal(<span class="hljs-number">0</span>)</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/24&apos;</span>).strNormal(<span class="hljs-number">1</span>)</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0/24&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/24&apos;</span>).strNormal(<span class="hljs-number">2</span>)</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0/255.255.255.0&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>IP(<span class="hljs-string">&apos;10.0.0.0/24&apos;</span>).strNormal(<span class="hljs-number">3</span>)</span><br><span class="line"><span class="hljs-string">&apos;10.0.0.0-10.0.0.255&apos;</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>ip = IP(<span class="hljs-string">&apos;10.0.0.0&apos;</span>)</span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(ip)</span><br><span class="line"><span class="hljs-number">10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>ip.NoPrefixForSingleIp = <span class="hljs-literal">None</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(ip)</span><br><span class="line"><span class="hljs-number">10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span>/<span class="hljs-number">32</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>ip.WantPrefixLen = <span class="hljs-number">3</span></span><br><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>print(ip)</span><br><span class="line"><span class="hljs-number">10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span><span class="hljs-number">-10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.0</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+
+<p>&#x66F4;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x67E5;&#x9605;<a href="https://github.com/autocracy/python-ipy/" target="_blank" rel="noopener">https://github.com/autocracy/python-ipy/</a></p>
+</body></html>
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2019/05/03/Why-Dropshipping-Does-Not-Work-For-Me/" itemprop="url">Why Drop Shipping Does Not Work For Me</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2019-05-03T07:36:41.000Z" itemprop="datePublished">5月 3 2019</time>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            4 分钟 读完 (约 639 字)
         </span>
         
     </div>
@@ -201,14 +389,14 @@
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
-            <time datetime="2019-04-27T11:33:29.000Z" itemprop="datePublished">Apr 27 2019</time>
+            <time datetime="2019-04-27T11:33:29.000Z" itemprop="datePublished">4月 27 2019</time>
         </span>
         
         
         <span class="column is-narrow">
             
             
-            3 minutes read (About 436 words)
+            3 分钟 读完 (约 436 字)
         </span>
         
     </div>
@@ -246,7 +434,7 @@
     <div class="container">
         <div class="columns content">
             <div class="column is-narrow has-text-centered">
-                &copy; 2020 Liji Yu&nbsp;
+                &copy; 2021 刀十一&nbsp;
                 Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a
                         href="http://github.com/ppoffice/hexo-theme-minos">Minos</a>
             </div>
@@ -274,7 +462,7 @@
                 <span class="icon">
                     <i class="fas fa-globe"></i>
                 </span>
-                <span>English</span>
+                <span>简体中文</span>
                 <span class="icon is-small">
             <i class="fas fa-angle-down" aria-hidden="true"></i>
           </span>
@@ -284,11 +472,11 @@
             <div class="dropdown-content">
             
                 <a href="/index.html" class="dropdown-item">
-                    English
+                    简体中文
                 </a>
             
-                <a href="/zh-cn/index.html" class="dropdown-item">
-                    简体中文
+                <a href="/en/index.html" class="dropdown-item">
+                    English
                 </a>
             
             </div>
@@ -324,7 +512,7 @@
     window.FontAwesomeConfig = {
         searchPseudoElements: true
     }
-    moment.locale("en-AU");
+    moment.locale("zh-CN");
 </script>
 
 
@@ -450,7 +638,7 @@
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <input type="text" class="searchbox-input ins-search-input" placeholder="站内搜索" />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -462,11 +650,11 @@
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
             },
             CONTENT_URL: '/content.json',
         };
