@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;default&quot;]"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>如何用闪电贷空手套白狼？ | 刀十一的DevOps小站</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 4.2.1"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">如何用闪电贷空手套白狼？</h1><a id="logo" href="/.">刀十一的DevOps小站</a><p class="description"></p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">如何用闪电贷空手套白狼？</h1><div class="post-meta">2021-06-12</div><div class="post-content"><p>如果我跟你说，有人不需要你任何抵押物，也不需要做任何信用检查就可以借给你几百万美金，你会怎么想？</p>
+<p>如果我又说，这笔钱只能借给你一秒钟，你又会怎么想？</p>
+<p>在区块链上的去中心化金融领域，我刚才说的这些并不是逗你玩，而是真实存在的服务。并且已经有人利用这类服务，用少到几乎可以忽略不计的成本赚取了巨额利润。</p>
+<p>这种服务就是闪电贷Flash Loan。</p>
+<h1 id="闪电贷的原理"><a href="#闪电贷的原理" class="headerlink" title="闪电贷的原理"></a>闪电贷的原理</h1><p>要理解闪电贷的原理，我们先要了解以太坊交易的原子性。</p>
+<p>所谓原子性就是，以太坊的一笔交易是不可分割的最小单位，要么成功，要么失败，不可能成功一半失败一半。</p>
+<p>举个例子，张三向李四转一个以太币。如果交易成功，那么张三账户上少一个以太币，李四账户上多一个以太币。如果失败，那张三账户不变，李四账户也不变。</p>
+<p>不可能出现交易成功一半失败一半，也就是张三少一个以太币但李四账户不变，或者李四多一个以太币但张三账户不变。</p>
+<p>我们知道，以太坊的交易除了以太币转账外，还可以调用智能合约。</p>
+<p>调用智能合约也具有原子性。如果一个智能合约改变了多个数值，那这个调用如果成功，这些数值都会被改变，如果失败则这些数值都不会被改变。不会出现一次调用改变了部分数值而另一部分数值保持不变。</p>
+<p>更重要的是，如果一笔交易调用了多个智能合约，那所有这些调用也具有原子性，要么这些调用都成功，要么都失败。不会出现部分成功，部分失败。</p>
+<p>闪电贷就是利用了以太坊交易的原子性。</p>
+<p>闪电贷规定，你可以从我这里借出任意多的代币，只要我有。随便你用它干什么，但是必须要保证在同一个交易里归还本金和利息。</p>
+<p>由于这笔交易有原子性，要么成功、要么失败。如果成功你还本付息，放贷机构赚利息。如果失败，就等于这笔操作从来没有发生过，也就是你从来没有借过钱。</p>
+<p><img src="https://raw.githubusercontent.com/yuliji/images/main/imgflashloan.png" alt="闪电贷原子性"></p>
+<p>由于这里我们用技术保证了，放贷机构稳赚不赔，所以就根本不需要抵押物和什么信用检查。</p>
+<p>而且由于你只是瞬间占用了这些资金，所以利息是很低的。比如aave每笔闪电贷只收万分之九的手续费。</p>
+<p>由于所有的借和还是在一个交易里瞬间完成，所以这种贷款方式就有了这个名字，闪电贷。</p>
+<h1 id="套利"><a href="#套利" class="headerlink" title="套利"></a>套利</h1><p>刚才我们讲了闪电贷对于放贷机构的好处。那就是稳赚不赔。</p>
+<p>那这种只能借一瞬间的贷款对于借款者有什么用呢？</p>
+<p>显然，你用这些钱去买一套房子，或者进行其它区块链下的投资是不可能的。但是我们可以在一借一还之间，通过调用其它智能合约来赚钱。</p>
+<p>一种比较简单的赚钱方法是套利交易（Arbitrage）。</p>
+<p>假设有一种代币T，它在去中心化交易所DEX A的价格是50USDT，而在去中心化交易所DEX B的价格是55USDT。</p>
+<p>那我们就可以构建这样一笔交易。</p>
+<ol>
+<li>从闪电贷合约F中借出100,000USDT</li>
+<li>在去中心化交易所DEX A以50USDT的价格买入2000个代币T</li>
+<li>在去中心化交易所DEX B以55USDT的价格卖出2000个代币T，得到110,000 USDT，赚取差价</li>
+<li>还给闪电贷合约F，100,000USDT本金，加利息，假设是100USDT。那剩下的9900USDT就是我们的利润。</li>
+</ol>
+<p>通过以上这波操作，我们只需要付出十几美元最多几十美元的以太坊gas费就能空手套白狼，赚取近一万美元的利润。大家觉得是不是很妙呢？</p>
+<h1 id="闪电贷攻击"><a href="#闪电贷攻击" class="headerlink" title="闪电贷攻击"></a>闪电贷攻击</h1><p>当然，上面那个例子都是假设一切都是理想情况。有经验的币圈老韭菜都知道，实际上这种套利机会是很少的。</p>
+<p>正当的方法赚不到钱，有人就动歪脑筋，通过不正当的方法赚钱。</p>
+<p>有一些黑客就利用某些智能合约的漏洞。他们通过闪电贷获取资金，然后利用这笔巨资攻击有漏洞的智能合约窃取利益。这就是臭名昭著的闪电贷攻击。</p>
+<p>在2020年情人节晚上，黑客利用闪电贷和bZx协议的漏洞，用不到100美元的成本获利超过350，000美元。</p>
+<p>攻击的过程是这样的。280</p>
+<ol>
+<li>黑客从dYdX协议，0成本借出 10,000 ETH ，当时价值2，800，000美元</li>
+<li>他把其中的5500ETH抵押到Compound协议借出112WBTC</li>
+<li>他又把其中的1300ETH转入bZx，并用5倍杠杆卖出ETH买入WBTC。bZx为了完成这笔交易，他通过另一个协议kyber network在去中心化交易所uniswap里大量抛出ETH购买WBTC。由于uniswap相应池子深度不够，导致在uniswap上WBTC/ETH 的价格由正常的38.5被推高到109.8。</li>
+<li>然后黑客利用这个被推高的价格，抛出第二步中借出的WBTC，以高于市场平均价两倍的平均价格：61.4获得6871ETH</li>
+<li>利用这6871ETH加上手里没用的3200ETH，还掉从dYdX借出的1000ETH。</li>
+</ol>
+<p>这样仅仅一个交易，黑客手里凭空多出了71ETH。</p>
+<p><img src="https://raw.githubusercontent.com/yuliji/images/main/imgbzxattack.png" alt="一个交易凭空多出了71ETH"></p>
+<p>这还没完，大家还记得黑客在compound这条线的操作吗？黑客之前质押5500ETH最后砸出了6871ETH，用来归还闪电贷。</p>
+<p>但是，归还闪电贷之后，这5500ETH的仓位还在黑客手里。</p>
+<p>由于其它市场上WBTC/ETH 只有38.5，黑客立马在其它交易市场用4300ETH换取了112WBTC，从compound里换出了5500ETH的押金，又赚了1200ETH，总共1271ETH。</p>
+<p>按当时价格计算，黑客空手获利$355,880。而他付出的成本只是一些以太坊的gas费，估计不会超过100美元。这简直都不是空手套白狼，而是空手套大象了。</p>
+<p><img src="https://raw.githubusercontent.com/yuliji/images/main/imgbzxattack2.png" alt="总获利1271ETH"></p>
+<p>老实说，看这起攻击的报告时，我真是忍不住拍案叫绝。虽然君子爱财取之有道。黑客偷钱肯定是不对的，但是他的手法的确是高，实在是高。</p>
+<p>这次攻击，简单来说就是bZx协议里有个bug没有检测出风险，于是用五倍资金在uniswap上把钱对敲给了黑客。</p>
+<p>由于发起这类攻击需要百万美金级别的资金。如果没有闪电贷，黑客不容易筹集到如此多资金来攻击，即使有那么多钱，黑客可能也不愿冒风险，万一一个手滑攻击不成，还赔了夫人又折兵。</p>
+<p>有了闪电贷，黑客可以凭空借出大量资金，而且如果攻击失败，他可以放弃这笔交易回滚所有操作，就当什么事情也没发生过，除了一些以太坊gas费，也不会损失什么。黑客和闪电贷dYdX协议没有任何风险稳赚不赔，compound协议上也是一次正常的借贷和还款。</p>
+<p>倒霉的就是bZx了，谁叫你有bug呢。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>从这我们也可以看出，闪电贷攻击一般并不是攻击闪电贷，而是利用闪电贷提供的资金攻击其它有漏洞的去中心化金融协议。</p>
+<p>有些人一听闪电贷攻击，就以为闪电贷是什么洪水猛兽，把闪电贷批评一通。我说这纯粹是瞎比比。</p>
+<p>我认为闪电贷用技术手段提供了无风险借贷，提高了资金利用率，这绝对是一种创新。</p>
+<p>黑客用它来干坏事，坏的是黑客而不是闪电贷。就好像坏人借了银行钱去干坏事，你总不能骂银行吧。</p>
+<p>听了我讲那么多，你是不是有点心潮澎湃，也想用闪电贷套个白狼啥的？</p>
+<p>不过利用闪电贷需要编写智能合约代码，有一定的技术门槛。要想赚钱，先学写代码吧。</p>
+</div><div class="tags"></div><div class="post-nav"><a class="next" href="/2021/05/27/%E4%BB%A5%E5%A4%AA%E5%9D%8A2-0%E3%80%81POS%E3%80%81%E4%BF%A1%E6%A0%87%E9%93%BE%E5%92%8C%E5%88%86%E7%89%87%E9%83%BD%E6%98%AF%E4%BA%9B%E5%95%A5%EF%BC%9F/">以太坊2.0、POS、信标链和分片都是些啥？</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/DevOps/" style="font-size: 15px;">DevOps</a> <a href="/tags/tools/" style="font-size: 15px;">tools</a> <a href="/tags/GitHub/" style="font-size: 15px;">GitHub</a> <a href="/tags/GitHub-Actions/" style="font-size: 15px;">GitHub Actions</a> <a href="/tags/Python/" style="font-size: 15px;">Python</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/06/12/%E5%A6%82%E4%BD%95%E7%94%A8%E9%97%AA%E7%94%B5%E8%B4%B7%E7%A9%BA%E6%89%8B%E5%A5%97%E7%99%BD%E7%8B%BC%EF%BC%9F/">如何用闪电贷空手套白狼？</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/05/27/%E4%BB%A5%E5%A4%AA%E5%9D%8A2-0%E3%80%81POS%E3%80%81%E4%BF%A1%E6%A0%87%E9%93%BE%E5%92%8C%E5%88%86%E7%89%87%E9%83%BD%E6%98%AF%E4%BA%9B%E5%95%A5%EF%BC%9F/">以太坊2.0、POS、信标链和分片都是些啥？</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/05/19/2021%E5%B9%B4DevOps%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E5%BF%85%E5%A4%87%E6%8A%80%E8%83%BD/">2021年DevOps工程师的必备技能</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/04/11/%E6%BF%80%E5%8A%A8%EF%BC%8C%E6%88%91%E4%BA%B2%E7%9C%BC%E8%A7%81%E5%88%B0%E4%BA%86%E5%88%9D%E4%BB%A3%E8%8B%B9%E6%9E%9C%E7%94%B5%E8%84%91%EF%BC%81/">激动，我亲眼见到了初代苹果电脑！</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/04/06/%E4%BD%A0%E8%BF%98%E5%9C%A8Linux%E4%B8%8A%E7%94%A8cat%E5%92%8Cfind%EF%BC%9F%E5%A4%AA%E8%90%BD%E4%BC%8D%E4%BA%86%E5%90%A7%EF%BC%81/">你还在Linux上用cat和find？太落伍了吧！</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/04/04/LeetCode%E5%88%B7%E9%A2%98%E6%89%8B%E5%86%8C%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD/">LeetCode刷题手册免费下载</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/03/25/%E7%94%A8GitHub-Actions%E8%87%AA%E5%8A%A8%E5%8F%91%E5%B8%83hexo%E5%8D%9A%E5%AE%A2/">用GitHub Actions自动发布Hexo博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/03/21/zh-cn/%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BF%90%E7%BB%B4%E7%9B%B8%E5%85%B3Python%E5%BA%932%EF%BC%9AIPy/">好用的运维相关Python库2：IPy</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/03/21/zh-cn/%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BF%90%E7%BB%B4%E7%9B%B8%E5%85%B3Python%E5%BA%931%EF%BC%9Apsutil/">好用的运维相关Python库1：psutil</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2021 <a href="/." rel="nofollow">刀十一的DevOps小站.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
