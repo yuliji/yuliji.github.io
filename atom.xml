@@ -10,7 +10,7 @@
   <link href="https://yuliji.github.io/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, 极客吉</rights>
   <title>极客吉</title>
-  <updated>2026-10-08T09:22:52.840Z</updated>
+  <updated>2026-10-11T03:53:07.937Z</updated>
   <entry>
     <author>
       <name>极客吉</name>
@@ -23,7 +23,7 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Sn8_yQXMkbY" title="YouTube video player"]]>
     </summary>
     <title>当年导致以太坊分叉的The DAO事件是怎么回事？</title>
-    <updated>2026-10-08T09:22:52.840Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -37,7 +37,7 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z01yLDLOnP8" title="YouTube video player"]]>
     </summary>
     <title>我来教大家如何开土矿割韭菜</title>
-    <updated>2026-10-08T09:22:52.840Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -51,7 +51,7 @@
 <p>前不久，算法稳定币项目，IRON]]>
     </summary>
     <title>TITAN币是如何一夜归零的？</title>
-    <updated>2026-10-08T09:22:52.839Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -66,7 +66,7 @@
 <iframe]]>
     </summary>
     <title>稳定币真的稳定吗？有风险吗？</title>
-    <updated>2026-10-08T09:22:52.840Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -81,7 +81,7 @@
 <p>在区块链上的去中心化金融领域，我刚才说的这些并不是逗你玩，而是真实存在的服务。并且已经有人利用这]]>
     </summary>
     <title>如何用闪电贷空手套白狼？</title>
-    <updated>2026-10-08T09:22:52.840Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -96,7 +96,7 @@
 <p>今天我就来简单介绍一下以太坊]]>
     </summary>
     <title>以太坊2.0、POS、信标链和分片都是些啥？</title>
-    <updated>2026-10-08T09:22:52.840Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -111,7 +111,7 @@
 <p>我的策略是，在每个领域学习和掌握一个工具。掌握一个工具后，其它工具]]>
     </summary>
     <title>2021年DevOps工程师的必备技能</title>
-    <updated>2026-10-08T09:22:52.839Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -125,7 +125,7 @@
 <p><img]]>
     </summary>
     <title>激动，我亲眼见到了初代苹果电脑！</title>
-    <updated>2026-10-08T09:22:52.840Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -142,7 +142,7 @@
 <p>以上是Rust社区里流传的一个梗。Rust号称是适合系统级编程的语言，但是Rust社区里有些人自嘲，说除了能用Rust把Linux上已经有的]]>
     </summary>
     <title>你还在Linux上用cat和find？太落伍了吧！</title>
-    <updated>2026-10-08T09:22:52.840Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -156,7 +156,7 @@
 <p>当然，大家刷算法题的时候总会遇到不会的题目，这时候虽说可以通过Google搜到答案，但是你搜到的答案质量却不一定有保证。如果你每次都只学到低质量的答案，那你]]>
     </summary>
     <title>LeetCode刷题手册免费下载</title>
-    <updated>2026-10-08T09:22:52.839Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -172,7 +172,7 @@
 <p>我们可以把一个Action理解为一小段特定功能的脚本，多个Action能够组成一个Workflow，Workflow由各种GitHub的事件触发。我们可以用GitHub]]>
     </summary>
     <title>用GitHub Actions自动发布Hexo博客</title>
-    <updated>2026-10-08T09:22:52.840Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -187,7 +187,7 @@
 <p>其中最重要的<code>IP</code>]]>
     </summary>
     <title>好用的运维相关Python库2：IPy</title>
-    <updated>2026-10-08T09:22:52.840Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
   <entry>
     <author>
@@ -202,6 +202,6 @@
 <p>虽然理论上可以用Python调用Bash指令实现各种功能，但是给各种命令写Bash]]>
     </summary>
     <title>好用的运维相关Python库1：psutil</title>
-    <updated>2026-10-08T09:22:52.839Z</updated>
+    <updated>2026-10-11T03:53:07.937Z</updated>
   </entry>
 </feed>
