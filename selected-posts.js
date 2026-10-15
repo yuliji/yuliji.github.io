@@ -2,31 +2,43 @@
 const blogBaseUrl = new URL("/", window.location.href);
 const selectedPosts = [
   {
-    "title": "当年导致以太坊分叉的The DAO事件是怎么回事？",
-    "date": "2021-11-20",
-    "type": "视频记录",
-    "path": "2021/11/20/当年导致以太坊分叉的The-DAO事件是怎么回事？/",
-    "summary": "回顾 The DAO 事件与以太坊分叉。"
+    "title": "44岁，我的自救计划",
+    "date": "2026-10-15",
+    "type": "个人成长",
+    "path": "2026/10/15/44岁，我的自救计划/",
+    "summary": "面对 AI 时代的职业焦虑，用行动探索中年程序员的自救之路。"
   },
   {
-    "title": "我来教大家如何开土矿割韭菜",
-    "date": "2021-11-20",
-    "type": "视频记录",
-    "path": "2021/11/20/我来教大家如何开土矿割韭菜/",
-    "summary": "关于区块链项目的 B 站与 YouTube 视频记录。"
+    "title": "新的一年，我要过得好",
+    "date": "2026-01-01",
+    "type": "生活感悟",
+    "path": "2026/01/01/新的一年，我要过得好/",
+    "summary": "关注健康、兴趣和家人，把过得好作为新一年的目标。"
   },
   {
-    "title": "TITAN币是如何一夜归零的？",
-    "date": "2021-08-08",
-    "type": "区块链",
-    "path": "2021/08/08/TITAN币是如何一夜归零的？/",
-    "summary": "回顾 IRON Finance 代币崩盘事件，理解算法稳定币的风险。"
+    "title": "澳大利亚的首都是悉尼",
+    "date": "2025-10-06",
+    "type": "人生思考",
+    "path": "2025/10/06/澳大利亚的首都是悉尼/",
+    "summary": "从童年的一次争论说起，反思事实、观点与权威，减少精神内耗。"
   }
 ];
 const englishPosts = [
- {title: 'The DAO incident that split Ethereum', type: 'Video · Chinese', summary: 'A look back at The DAO incident and the Ethereum fork.'},
- {title: 'How yield-farming schemes are created', type: 'Video · Chinese', summary: 'A video exploring how these blockchain projects work.'},
- {title: 'How TITAN collapsed overnight', type: 'Blockchain · Chinese', summary: 'The IRON Finance collapse and the risks of algorithmic stablecoins.'}
+  {
+    "title": "At 44, my plan to move forward",
+    "type": "Personal growth · Chinese",
+    "summary": "Facing career anxiety in the AI era and exploring a new path through action."
+  },
+  {
+    "title": "This year, I want to live well",
+    "type": "Life · Chinese",
+    "summary": "Making room for health, hobbies and family in the new year."
+  },
+  {
+    "title": "Sydney is the capital of Australia",
+    "type": "Reflections · Chinese",
+    "summary": "A childhood argument prompts reflections on facts, authority and inner peace."
+  }
 ];
 if (document.documentElement.lang === 'en') selectedPosts.forEach((post, index) => Object.assign(post, englishPosts[index]));
 const notesList = document.querySelector('#selected-posts');

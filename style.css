@@ -8,3 +8,16 @@ nav{color:#6f6b52}nav a:hover{color:#252e20}.nav-contact{border-color:#969373;co
 /* Hidden optional sections must remain hidden even when their layout uses grid. */
 [hidden]{display:none!important}
 .language-switch{border:1px solid var(--line);border-radius:4px;padding:9px 12px;white-space:nowrap}html[lang="en"] .hero h1{font-family:Georgia,serif;font-size:clamp(42px,5.3vw,68px);letter-spacing:-2px}html[lang="en"] .art-word{font-family:Georgia,serif;font-size:100px;top:90px;left:25px}html[lang="en"] .art-word span{margin-left:25px}html[lang="en"] h2{font-family:Georgia,serif;letter-spacing:-1px}html[lang="en"] .hero-bottom{gap:14px;letter-spacing:.5px}html[lang="en"] .intro-strip div{gap:18px;font-size:14px}html[lang="en"] .brand-mark{font-family:Georgia,serif;letter-spacing:0}html[lang="en"] .contact h2{font-size:48px}@media(max-width:650px){html[lang="en"] .hero h1{font-size:48px}html[lang="en"] .art-word{font-size:77px;top:65px;left:24px}html[lang="en"] .hero-bottom{flex-wrap:wrap}html[lang="en"] .intro-strip div{flex-wrap:wrap;justify-content:flex-start;gap:12px;font-size:12px}html[lang="en"] .contact h2{font-size:36px}html[lang="en"] .hero p{font-size:13px}}
+
+/* 公众号入口与关于我的标题对齐，保留二维码原图白边。 */
+.wechat-card{display:flex;align-items:center;gap:22px;margin:34px 0 0;padding-top:26px;border-top:1px solid var(--line);max-width:410px}
+.wechat-qr{display:block;flex:0 0 136px;padding:4px;background:#fff;border:1px solid var(--line);border-radius:4px;line-height:0}
+.wechat-qr img{display:block;width:100%;height:auto}
+.wechat-card figcaption{min-width:0}
+.wechat-label{display:block;font-size:10px;letter-spacing:2px;color:#837961;margin-bottom:9px}
+.wechat-card strong{display:block;font-size:15px;font-weight:500;color:#494e36;line-height:1.6}
+.wechat-card p{font-size:12px;color:#746e57;line-height:1.9;margin:8px 0 10px}
+.wechat-tip{font-size:10px;color:#837961;line-height:1.8}
+@media(max-width:900px){.wechat-card{gap:16px}.wechat-qr{flex-basis:120px}}
+@media(max-width:650px){.wechat-card{margin-top:26px;margin-bottom:28px;max-width:none;padding-top:22px;gap:20px}.wechat-qr{flex-basis:128px}}
+@media(max-width:360px){.wechat-card{gap:14px}.wechat-qr{flex-basis:112px}.wechat-card strong{font-size:14px}}
